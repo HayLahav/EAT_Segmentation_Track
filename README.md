@@ -1,8 +1,5 @@
 # EAT Segmentation — Membrane Morphodynamics in Label-Free Microscopy
 
-**Hay Lahav** · School of Electrical Engineering, Tel Aviv University  
-Supervisors: Prof. Hedva Spitzer · Prof. Ilan Tsarfaty
-
 ---
 
 ## Overview
