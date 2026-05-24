@@ -1,4 +1,4 @@
-# EAT Segmentation — Membrane Morphodynamics in Label-Free Microscopy
+# EAT Segmentation — Membrane Morphodynamics in Label-Free Microscopy (TBC)
 
 ---
 
@@ -208,27 +208,4 @@ Records are written to `results/predictions_{cell_type}.csv`.
 
 ---
 
-## References
 
-1. Edlund et al. (2021). LIVECell — A large-scale dataset for label-free live cell segmentation. *Nature Methods*, 18(9).
-2. Spitzer, H., Lahav, H., et al. (2025). VIAEVCA: A Bio-Inspired Algorithm for Enhanced Visibility in Coronary Angiograms. *Biomimetics*, 10(1), 18.
-3. Matichin, H., Einav, Y., & Spitzer, H. (2015). The Single Additive Mechanism Underlying Psychophysical Facilitation. *JOSA A*, 32(9).
-4. Das, S., & Zun, M. (2025). Semi-Unsupervised Microscopy Segmentation with Fuzzy Logic and Spatial Statistics. *arXiv*.
-5. Nichol, A., & Dhariwal, P. (2021). Improved Denoising Diffusion Probabilistic Models. *ICML 2021*.
-6. Zhou et al. (2018). UNet++: A Nested U-Net Architecture for Medical Image Segmentation. *MICCAI 2018*.
-
----
-
-## Citation
-
-If you use this work, please cite:
-
-```bibtex
-@misc{lahav2025eat,
-  author    = {Lahav, Hay},
-  title     = {EAT Segmentation: Membrane Morphodynamics in Label-Free Microscopy},
-  year      = {2025},
-  institution = {Tel Aviv University, School of Electrical Engineering},
-  note      = {Supervisors: Prof. Hedva Spitzer, Prof. Ilan Tsarfaty}
-}
-```
