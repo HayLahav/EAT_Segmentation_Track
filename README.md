@@ -1,10 +1,10 @@
-# EAT Segmentation — Membrane Morphodynamics in Label-Free Microscopy (TBC)
+# EAT Segmentation - Membrane Morphodynamics in Label-Free Microscopy (TBC)
 
 ---
 
 ## Overview
 
-The **Epithelial-to-Amoeboid Transition (EAT)** is a phenotypic switch in cancer cells linked to aggressive, adhesion-independent metastatic motility. Its earliest cellular reporters — membrane **Ruffles** (actin-driven lamellipodia) and **Blebs** (pressure-driven spherical protrusions) — are systematically missed by existing tools because they occupy only 3–5% of the cell boundary and differ from background by as little as 5–15 intensity units in a 16-bit phase-contrast image.
+The **Epithelial-to-Amoeboid Transition (EAT)** is a phenotypic switch in cancer cells linked to aggressive, adhesion-independent metastatic motility. Its earliest cellular reporters, membrane **Ruffles** (actin-driven lamellipodia) and **Blebs** (pressure-driven spherical protrusions), are systematically missed by existing tools because they occupy only 3–5% of the cell boundary and differ from background by as little as 5–15 intensity units in a 16-bit phase-contrast image.
 
 This project detects EAT morphological signatures from **label-free phase-contrast microscopy** alone — no fluorescent probes, no manual annotation of ruffles or blebs. It combines bio-inspired membrane enhancement with deep segmentation and diffusion-based ruffle prediction, evaluated on the [LIVECell](https://github.com/sartorius-research/LIVECell) dataset on EAT-relevant cancer cell lines (MCF7, SkBr3, SKOV3).
 
@@ -24,7 +24,7 @@ V3 is the current architecture: the ConvNeXt backbone from V1 is frozen and used
 
 ## Architecture
 
-### V1 — Hybrid ConvNeXt-Tiny + UNet++
+### V1 - Hybrid ConvNeXt-Tiny + UNet++
 
 ```
 Input (B, 1, H, W)  ← phase-contrast grayscale
@@ -46,7 +46,7 @@ Input (B, 1, H, W)  ← phase-contrast grayscale
 
 The 64-ch decoder output `x13` is exposed via `return_feats=True` for use in V3.
 
-### V3 — Combined Model (Frozen Hybrid + Ruffle Diffusion Head)
+### V3 - Combined Model (Frozen Hybrid + Ruffle Diffusion Head)
 
 ```
 Input (B, 1, H, W)
