@@ -18,7 +18,7 @@ This project detects EAT morphological signatures from **label-free phase-contra
 | V2 | PE-Diffusion (ViT-B/16 + Diffusion) | 0.366 | 0.525 | 0.367 |
 | **V3** | **Frozen Hybrid + Ruffle Diffusion Head** | **0.846** | **0.915** | **0.716** |
 
-V3 is the final architecture: the ConvNeXt backbone from V1 is frozen and used to condition a lightweight diffusion head trained solely on ruffle prediction — separating concerns and eliminating the conflicting gradients that degraded V2.
+V3 is the current architecture: the ConvNeXt backbone from V1 is frozen and used to condition a lightweight diffusion head trained solely on ruffle prediction, separating concerns and eliminating the conflicting gradients that degraded V2. The improvement is not sufficient. The next version will include a fine-tuned SAM model and a more advanced technique to detect the ruffles and blobs better, combining the V1 method.
 
 ---
 
